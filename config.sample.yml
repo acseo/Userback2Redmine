@@ -1,0 +1,32 @@
+redmine:
+    # URL of your redmine instance
+    url: ~
+    # Your Remdine API access key (go to your account settings to get one)
+    access_key: ~
+    # The target Redmine project name
+    project: ~
+issues:
+    # Field or custom field used for identification of the issue
+    identifier: 
+        userback: 'ID'
+        redmine: 'My Custom Field'
+    # Map Userback CSV columns to Redmine field or custom fields
+    mapping:
+        ID: ~
+        Collaboration Url: ~
+        Date: 'start_date' # for example
+        Page: ~
+        Email: ~
+        Rating: ~
+        Description: 'subject'
+        Screenshot: ~
+        Attachment: ~
+        User Agent: ~
+        Window Size: ~
+        Screen Resolution: ~
+        Workflow: 'status_id'
+        Priority: ~
+        Category: ~
+        Assignee: ~
+        Country: ~
+        City: ~
