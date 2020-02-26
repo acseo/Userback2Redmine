@@ -11,17 +11,19 @@ This tool allows to transfer userback issues in redmine issues
 
 ## Usage
 
-```
-# clone the repository
+```bash
+$ git@github.com:acseo/Userback2Redmine.git
 $ composer install
 
 # create a config file based on config.sample.yml
+
+# launch the tool
 $ php bin/userback2redmine sync /path/to/config/file.yml path/to/userback/issues.csv
 ```
 
 ### Configuration file
 
-```
+```yaml
 # config.samle.yml
 redmine:
     # URL of your redmine instance
