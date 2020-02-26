@@ -24,7 +24,6 @@ $ php bin/userback2redmine sync /path/to/config/file.yml path/to/userback/issues
 ### Configuration file
 
 ```yaml
-# config.samle.yml
 redmine:
     # URL of your redmine instance
     url: ~
@@ -33,15 +32,15 @@ redmine:
     # The target Redmine project name
     project: ~
 issues:
-    # field or custom field used for identification of the issue
+    # Field or custom field used for identification of the issue
     identifier: 
         userback: 'ID'
-        redmine: 'My Redmine Custom field'
-    # map Userback CSV columns to Redmine field or custom fields
+        redmine: 'My Custom Field'
+    # Map Userback CSV columns to Redmine field or custom fields
     mapping:
         ID: ~
         Collaboration Url: ~
-        Date: ~
+        Date: 'start_date' # for example
         Page: ~
         Email: ~
         Rating: ~
@@ -51,12 +50,13 @@ issues:
         User Agent: ~
         Window Size: ~
         Screen Resolution: ~
-        Workflow: ~
+        Workflow: 'status_id'
         Priority: ~
         Category: ~
         Assignee: ~
         Country: ~
         City: ~
+
 ```
 
 ### format data sent to Redmine
