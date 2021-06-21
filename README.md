@@ -12,7 +12,7 @@ This tool allows to transfer userback issues in redmine issues
 ## Usage
 
 ```bash
-$ git@github.com:acseo/Userback2Redmine.git
+$ git clone https://github.com/acseo/Userback2Redmine.git
 $ composer install
 
 # create a config file based on config.sample.yml
